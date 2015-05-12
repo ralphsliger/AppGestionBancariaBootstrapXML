@@ -82,7 +82,7 @@
     <Content Include="Web\Principal.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Datos\Crear.cs" />
+    <Compile Include="Datos\CuentasRepositories.cs" />
     <Compile Include="Modelo\Ahorros.cs" />
     <Compile Include="Modelo\Cheques.cs" />
     <Compile Include="Modelo\Corrientes.cs" />

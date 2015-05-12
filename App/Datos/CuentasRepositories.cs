@@ -9,7 +9,7 @@ using System.Web.Hosting;
 
 namespace App.Datos
 {
-    public class Crear : Cuentas
+    public class CuentasRepositories : Cuentas
     {
 
         public void WriteXML(Cuentas p)

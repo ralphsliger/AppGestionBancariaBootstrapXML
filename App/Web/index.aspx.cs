@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using App.Modelo;
 using App.Datos;
 
+
 namespace App.Web
 {
     public partial class index : System.Web.UI.Page
@@ -29,7 +30,7 @@ namespace App.Web
                                        TelefonoW.Text
                                       );
 
-            Crear data = new Crear();
+            CuentasRepositories data = new CuentasRepositories();
 
             
             data.WriteXML(p);
