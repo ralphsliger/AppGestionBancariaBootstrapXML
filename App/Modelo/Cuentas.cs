@@ -9,7 +9,7 @@ namespace App.Modelo
     {
         #region "Atributos"
         private string cliente;        
-        private string identificacion;        
+        public string identificacion;        
         private string idcliente;        
         private double balance;
         #endregion
