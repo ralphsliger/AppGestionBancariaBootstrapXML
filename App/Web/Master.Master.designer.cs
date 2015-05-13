@@ -7,10 +7,10 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace App.Web {
+namespace AppGestionBancariaBootstrapXML.Web {
     
     
-    public partial class Principal {
+    public partial class Master {
         
         /// <summary>
         /// Control head.

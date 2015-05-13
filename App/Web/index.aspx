@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Web/principal.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="App.Web.index" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Web/Master.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="AppGestionBancariaBootstrapXML.Web.Index" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style type="text/css">
+<style type="text/css">
         .auto-style1 {
             width: 370px;
            
@@ -10,63 +10,48 @@
             height: 826px;
         }
     </style>
-    
+
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-  
-    
-    <center>
+
+
+     <center>
     <table >
         <tr><td class="auto-style1">
      <center>
         <div class="jumbotron">
-        <h2>Crear Usuario</h2>
+        <h2>Crear Personas</h2>
         <div class="form-group">
 
 
             <div class="control-group">
-                <label class="control-label">Id</label>
+                <label class="control-label">Identificacion</label>
                 <div class="controls">
-                     <asp:TextBox pattern="[1234567890]*" required="" title="Por favor ingrese dato numerico." ID="txtId"  runat="server" class="input-lg"  ></asp:TextBox>
+                     <asp:TextBox pattern="[1234567890]*" required="" title=" ingrese dato numerico." ID="identificacion"  runat="server" class="input-lg"  ></asp:TextBox>
                 </div>
              </div>
              <div class="control-group">
-                <label class="control-label" >Nombres</label>
+                <label class="control-label" >ID cliente</label>
                 <div class="controls">
-                     <asp:TextBox ID="txtNombres" pattern="[A-Za-z- -]*" runat="server" class="input-lg" required="" title="Por favor ingrese su nombre." ></asp:TextBox>
+                     <asp:TextBox ID="idclinte" runat="server"   pattern="[1234567890]*" class="input-lg" required="" title="Por favor ingrese dato numerico." ></asp:TextBox>
                 </div>
              </div>
         
                 <div class="control-group">
-                <label class="control-label" >Apellidos</label>
+                <label class="control-label" >Cliente</label>
                 <div class="controls">
-                     <asp:TextBox ID="txtApellidos" pattern="[A-Za-z- -]*" runat="server" class="input-lg" required="" tile="Por favor ingrese su apellido."></asp:TextBox>
+                     <asp:TextBox ID="cliente" pattern="[A-Za-z- -]*" runat="server" class="input-lg" required="" title="Por favor ingrese su nombre completo."></asp:TextBox>
                 </div>
              </div>
-              <div class="control-group">
-                <label class="control-label" >Email Personal</label>
-                <div class="controls">
-                     <asp:TextBox  type="emailp" ID="EmailP" runat="server" class="input-lg" required="" title="Por favor coloque su email personal." ></asp:TextBox>
-                </div>
-             </div>
-             <div class="control-group">
-                <label class="control-label" >Email Trabajo</label>
-                <div class="controls">
-                     <asp:TextBox  type="emailw" ID="EmailW" runat="server" class="input-lg" required="" title="Por favor coloque su email de trabajo."></asp:TextBox>
-                </div>
-             </div>
+              
                 <div class="control-group">
-                <label class="control-label" >Telefono Personal</label>
+                <label class="control-label" >Balance</label>
                 <div class="controls">
-                     <asp:TextBox ID="TelefonoP" runat="server" class="input-lg" required="" pattern="[1234567890]*" title="Por favor ingrese su numero telefonico personal."></asp:TextBox>
+                     <asp:TextBox ID="balance" runat="server" class="input-lg" required="" pattern="[1234567890]*" title="Por favor ingrese dato numerico."></asp:TextBox>
                 </div>
              </div>
-             <div class="control-group">
-                <label class="control-label" >Telefono Trabajo</label>
-                <div class="controls">
-                     <asp:TextBox ID="TelefonoW" runat="server" class="input-lg" required="" pattern="[1234567890]*" title="Por favor ingrese su numero telefonico de trabajo."></asp:TextBox>
-                </div>
-             </div>
+             
             <br />
             <div class="control-group">
 
@@ -81,4 +66,7 @@
         </table>
        <hr/>
        </center>
+
+
+
 </asp:Content>

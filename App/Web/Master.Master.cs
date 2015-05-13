@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace App.Web
+namespace AppGestionBancariaBootstrapXML.Web
 {
-    public partial class VerLista : System.Web.UI.Page
+    public partial class Master : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

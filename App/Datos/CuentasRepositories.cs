@@ -2,33 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using App.Modelo;
+using AppGestionBancariaBootstrapXML.Modelos;
 using System.Xml;
 using System.Web.Hosting;
+using System.IO;
+using System.Xml.Linq;
 
-
-namespace App.Datos
+namespace AppGestionBancariaBootstrapXML.Datos
 {
-    public class CuentasRepositories : Cuentas
+    public class CuentasRepositories
     {
 
-        public void WriteXML(Cuentas p)
-        {
-            string ruta = HttpContext.Current.Server.MapPath("/Datos/Lista.xml");
-            XmlTextWriter xmlwriter = new XmlTextWriter(ruta, System.Text.Encoding.UTF8);
-            xmlwriter.Formatting = Formatting.Indented;
-            xmlwriter.WriteStartDocument();
-            xmlwriter.WriteStartElement("Clientes");
-            xmlwriter.WriteStartElement("Clientes");
-            xmlwriter.WriteElementString("Identificacion", p.identificacion);
-            xmlwriter.WriteAttributeString("Id cliente", p.Idcliente);
-        
-            xmlwriter.WriteEndElement();
-            xmlwriter.WriteEndElement();
-            //xmlwriter.WriteEndDocument();
-            xmlwriter.Flush();
-            xmlwriter.Close();
-        }
+
 
 
     }

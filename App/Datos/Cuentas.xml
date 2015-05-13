@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+
+<cuentas>
+
+  <cuenta tipo="Ahorro">
+  
+    <indentificacion>12345789</indentificacion>
+  <idCliente>123356</idCliente>
+  <cliente>ralph sliger</cliente>
+  <balance>50.0</balance>
+  <tasaInteres>9.0</tasaInteres>
+  
+  </cuenta>
+  
+</cuentas>
+
